@@ -9,8 +9,8 @@
   <meta property="og:description" content="Privacy policy, terms of use, App Store page, data practices, purchases, and support contact for BiuLog.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hao10d.github.io/biulog-legal/">
-  <meta property="og:image" content="https://hao10d.github.io/biulog-legal/assets/biulog-icon.png">
-  <link rel="icon" href="assets/biulog-icon.png">
+  <meta property="og:image" content="https://hao10d.github.io/biulog-legal/assets/biulog-icon.webp">
+  <link rel="icon" href="assets/biulog-icon.webp">
   <title>BiuLog Support and Legal Center</title>
   <style>
     :root {
@@ -267,7 +267,7 @@
 <body>
   <header class="wrap">
     <a class="brand" href="https://hao10d.github.io/">
-      <img src="assets/biulog-icon.png" alt="BiuLog app icon">
+      <img src="assets/biulog-icon.webp" alt="BiuLog app icon" width="44" height="44">
       <span>BiuLog</span>
     </a>
     <div class="language" aria-label="Language selector">
@@ -286,7 +286,7 @@
         <p class="lead" data-i18n="lead">這裡提供 BiuLog 的隱私權政策、使用條款、App Store 頁面、資料使用說明與聯絡方式。BiuLog 是給新手爸媽使用的寶寶生活記錄 App，用於記錄喝奶、睡眠、尿布、副食品、成長、疫苗與備份資料。</p>
       </div>
       <div class="phone">
-        <img id="phoneShot" src="assets/screens/zh/screen-1.jpg" alt="BiuLog app screenshot">
+        <img id="phoneShot" src="assets/screens/zh/screen-1.webp" alt="BiuLog app screenshot" fetchpriority="high" decoding="async">
       </div>
     </section>
 
@@ -432,7 +432,7 @@
       document.querySelectorAll("[data-lang]").forEach((button) => {
         button.classList.toggle("active", button.getAttribute("data-lang") === next);
       });
-      document.getElementById("phoneShot").src = `assets/screens/${next}/screen-1.jpg`;
+      document.getElementById("phoneShot").src = `assets/screens/${next}/screen-1.webp?v=20260513`;
       if (updateUrl) {
         const url = new URL(window.location.href);
         url.searchParams.set("lang", next);
